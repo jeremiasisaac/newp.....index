@@ -1,0 +1,162 @@
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Angola Turismo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial;
+            background: #101820;
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            background: #182635;
+            text-align: center;
+        }
+
+        button {
+            margin: 10px 5px;
+            padding: 10px 15px;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 50px 10%;
+        }
+
+        .tela {
+            display: none;
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        .card {
+            background: #1c2b3a;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ANGOLA TURISMO</h1>
+
+    <button onclick="inicio()">Início</button>
+    <button onclick="praias()">Praias</button>
+    <button onclick="museus()">Museus</button>
+    <button onclick="provincias()">Províncias</button>
+</header>
+
+
+<main>
+
+    <section id="inicio" class="tela">
+        <h2>Descubra Angola 🇦🇴</h2>
+        <p>Conheça os lugares incríveis de Angola.</p>
+    </section>
+
+
+    <section id="praias" class="tela">
+        <h2>Praias</h2>
+
+        <div class="card">
+            <h3>Mussulo</h3>
+            <p>Um conhecido destino turístico de Luanda.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cabo Ledo</h3>
+            <p>Uma região costeira de Angola.</p>
+        </div>
+    </section>
+
+
+    <section id="museus" class="tela">
+        <h2>Museus</h2>
+
+        <div class="card">
+            <h3>Museu Nacional de Antropologia</h3>
+            <p>Conheça a cultura e história de Angola.</p>
+        </div>
+
+        <div class="card">
+            <h3>Museu de História Militar</h3>
+            <p>Conheça parte da história militar de Angola.</p>
+        </div>
+    </section>
+
+
+    <section id="provincias" class="tela">
+        <h2>Províncias</h2>
+
+        <div class="card">
+            <h3>Luanda</h3>
+            <p>Capital de Angola.</p>
+        </div>
+
+        <div class="card">
+            <h3>Benguela</h3>
+            <p>Província localizada no litoral.</p>
+        </div>
+
+        <div class="card">
+            <h3>Huambo</h3>
+            <p>Província localizada no planalto central.</p>
+        </div>
+    </section>
+
+</main>
+
+
+<script>
+
+function esconder() {
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("praias").style.display = "none";
+    document.getElementById("museus").style.display = "none";
+    document.getElementById("provincias").style.display = "none";
+}
+
+function inicio() {
+    esconder();
+    document.getElementById("inicio").style.display = "block";
+}
+
+function praias() {
+    esconder();
+    document.getElementById("praias").style.display = "block";
+}
+
+function museus() {
+    esconder();
+    document.getElementById("museus").style.display = "block";
+}
+
+function provincias() {
+    esconder();
+    document.getElementById("provincias").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
+```
